@@ -2,7 +2,7 @@
 $(document).ready(function() {
 
     // select card_image and use slideDown on the paragraph when clicked
-    $("button").on("click", function(){
-        $(this).prev().slideDown(2000);
+    $("img").click(function(){
+        $(this).next().children("p").slideDown(2000);
     })
 });
