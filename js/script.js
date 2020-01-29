@@ -5,4 +5,7 @@ $(document).ready(function() {
     $("img").click(function(){
         $(this).next().children("p").slideDown(2000);
     })
+    $(".card").click(function(){
+        $(this).toggleClass("highlight");
+    })
 });
