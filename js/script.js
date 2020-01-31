@@ -8,4 +8,13 @@ $(document).ready(function() {
     $(".card").click(function(){
         $(this).toggleClass("highlight");
     })
+
+    // clicking select only shows the highlighted panel
+    $("#select_btn").click(function(){
+        $(".card:not(.highlight)").hide();
+    })
+
+    $("#all_btn").click(function(){
+        $(".card").show();
+    })
 });
